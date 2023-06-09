@@ -1,0 +1,230 @@
+
+body{
+    background-image: url(/img/pattern-background-desktop.svg);
+    background-color: #e0e8ff;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500, 700, 900;
+}
+
+.container-main {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img-cont img{
+    width: 450px;
+    height: 220px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    margin: 0;
+}
+.img-cont{
+    margin: -3px;
+}
+
+
+.text-cont{
+    margin-top: 0%;
+    text-align: center;
+    background-color: white;
+    padding: 47px;
+    width: 356px;
+    height: 379px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: row;
+    width: 305px;
+    height: 48px;
+    padding: 24px;
+    background-color: #f8f9fe;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.summary h1{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.summary p{
+    margin-left: 24px;
+    margin-right: 24px;
+    font-size: 17px;
+    align-items: center;
+    line-height: 25px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 24px;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight:500;
+}
+
+.incon{
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.prices {
+    margin-right: 90px;
+    line-height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.prices h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: hsl(223, 47%, 23%);
+    white-space: nowrap;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 700;
+}
+.prices p{
+    color: hsl(224, 23%, 55%);
+    white-space: nowrap;
+    font-size: 17px;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 500;
+}
+
+.change h3{font-family: 'Red Hat Display',sans-serif;
+    font-weight: 600;
+}
+.change {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.change:hover {
+    transition: 0.5s;
+    color: #766cf1;
+    text-decoration: none;
+}
+
+.pay-bt button{
+    border: none;
+    width:  356px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 14px;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pay-bt {
+    border-radius: 10px;
+    box-shadow: 0 15px 20px #776cf1a1;
+}
+
+
+.pay-bt:hover button{
+    transition: 0.5s;
+    color: white;
+    background-color: #766cf1;
+}
+
+
+.cancel-bt{
+    margin-top: 36px;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.1s;
+}
+.cancel-bt:hover{
+    transition: 0.1s;
+    font-size: 19px;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+}
+.attribution a { color: hsl(245, 75%, 52%); }
+
+
+
+@media(max-width: 450px){
+    .text-cont{
+        width: 279px;
+        height: 366px;
+        padding: 24px;
+    }
+
+    .img-cont img{
+        width: 327px;
+        height: 161px;
+    }
+
+    .pay-bt button{
+        width: 279px;
+    }
+    .sub-container{
+        width: 247px;
+        height: 48px;
+        padding: 16px;
+    }
+
+    .prices {
+        margin-right: 45px;
+    }
+    .prices h3{
+        font-size: 14px;
+    }
+    .prices p{
+        font-size: 15px;
+    }
+
+    .incon{
+        width: 48px;
+        height: 48px;
+        margin-right: 20px;
+    }
+
+    .change h3{
+        font-size: 14px;
+    }
+
+    .summary p{
+        font-size: 14px;
+    }
+
+    .summary h1{
+        font-size: 18px;
+    }
+
+    .container-main {
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+
+    body{
+        background-image: url(/img/pattern-background-mobile.svg);
+        background-color: #e0e8ff;
+        background-repeat: no-repeat;
+    }
+
+
+}
